@@ -1,0 +1,14 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+@import "animation.css";
+*, body, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  outline: none;
+  border: none;
+  /* font-family: ; */
+  line-height: 1.5;
+}
