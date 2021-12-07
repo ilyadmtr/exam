@@ -20,6 +20,14 @@ section{
   width: 1200px;
   margin: auto;
 }
+h3{
+  font-weight: 100;
+  font-size: 35px;
+  text-align: center;
+  span{
+    font-weight: 700;
+  }
+}
 
 
 
@@ -34,10 +42,10 @@ section{
   padding-top: 30px;
 
 
-.container{
+  .container{
 
-  header{
-    display: flex;
+    header{
+      display: flex;
     justify-content: space-between;
     align-items: center;
     nav{
@@ -92,7 +100,7 @@ section{
 .title_part{
   width: 68%;
   margin-left: 10%;
-  margin-top: 15%;
+  margin-top: 10%;
   span{
 color: white;
 font-size: 22px;
@@ -122,14 +130,6 @@ font-family: "Cairo";
   .text_block{
     width: 750px;
     margin: 120px auto;
-    h3{
-      font-weight: 100;
-      font-size: 35px;
-      text-align: center;
-      span{
-        font-weight: 700;
-      }
-    }
     p{
       width: 600px;
       text-align: center;
@@ -143,7 +143,7 @@ font-family: "Cairo";
   }
   .right_branch{
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 0;
   }
   .img_block{
@@ -157,9 +157,110 @@ font-family: "Cairo";
 }
 //PLACE SECTION
 
+//PROFFESSIONAL SECTION
+.proffessional_section{
+  background: url("../images/background/circle.png") no-repeat center;
+  background-size: 47%;
+  .container{
+    .text_block{
+      width: 65%;
+      margin: auto;
+      margin-bottom: 100px;
+    }
+    .wrap{
+      width: 100%;
+      display: flex;
+      height: 600px;
+      .img_content{
+        width: 50%;
+        position: relative;
+        span{
+          position: absolute;
+          z-index: 5;
+          top: -30px;
+          left:150px;
+        }
+        .first_img{
+          width: 500px;
+          position: absolute;
+          z-index: 1;
+        }
+        .second_img{
+          width: 350px;
+          position: absolute;
+          top:325px;
+          left: 200px;
+          z-index: 3;
+        }
+      }
+      .list_content{
+        width: 50%;
+        ul{
+          margin-top: 40px;
+          li{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+              width: 40px;
+              margin-right: 15px;
+            }
+          }
+          .li_s{
+            margin-top: 150px;
+            margin-left: 60px;
+          }
+          .li_t{
+            margin-top: 100px;
+            margin-left: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+//PROFFESSIONAL SECTION
 
-
-
+// WHAT WE DO SECTION
+.what_we_do_section{
+margin-top: 175px;
+.text_block{
+  margin-bottom: 70px;
+}
+.container{
+  .wrap{
+    display: flex;
+    justify-content: space-between;
+    .list_item{
+      width: 350px;
+      .img_content{
+        img{
+          margin-bottom: 20px;
+        }
+      }
+      h4{
+        font-weight: 100;
+        font-size: 27px;
+        line-height: 47,46px;
+        margin-bottom: 30px;
+      }
+      ul{
+        li{
+          font-size: 14px;
+          margin-bottom: 15px;
+          margin-left: 25px;
+          &::before{
+            content: "";
+            background: url("../images/icons/list_item.png");
+          }
+        }
+      }
+    }
+  }
+}
+}
+// WHAT WE DO SECTION
 
 
 //INDEX
