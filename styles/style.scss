@@ -48,7 +48,7 @@ h3{
     display: block;
     margin-bottom: 15px;
   }
-  #your_email{
+  .your_email{
     width: 400px;
     height: 30px;
     background: white;
@@ -57,14 +57,14 @@ h3{
     padding-left: 15px;
     margin-bottom: 15px;
   }
-  #access{
+  .access{
     width: 12px;
     height: 12px;
     border-radius: 0;
     margin-bottom: 25px;
     font-size: 20px;
   }
-  #sub_input{
+  .sub_input{
     padding: 7px 50px;
     font-size: 20px;
     color: #fff;
@@ -616,11 +616,11 @@ ul{
     margin-top: -20px;
     width: 100%;
     text-align: center;
-    #your_email{
+    .your_email{
       width: 100%;
       height: 10%;
     }
-    #access{
+    .access{
       margin-bottom: 20px;
     }
   }
