@@ -33,7 +33,7 @@ h3{
   text-align: center;
   a{
     padding: 7px 50px;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     background:$green_color ;
     transition: 0.5s;
@@ -147,7 +147,7 @@ h3{
 .title_part{
   width: 68%;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 13%;
   span{
 color: white;
 font-size: 22px;
@@ -530,7 +530,7 @@ ul{
   margin-top: 100px;
   .container{
     .wrap{
-      height: 650px;
+      height: 545px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -554,23 +554,28 @@ ul{
     &:checked ~ .accordion-item_content{
       display: block;
     }
+    &:checked ~ .accordion-item_trigger>span::after{
+      content: "";
+      background:   url("../images/icons/minus.png") no-repeat center, #545A2F;
+      width: 22px;
+      height: 28px;
+    }
   }
   .accordion-item_trigger{
     display: block;
     padding: 20px;
     border-bottom: 1px solid #979797;
+    position: relative;
     span{
       font-weight: 700;
-      position: relative;
+      cursor:pointer;
       &:after{
+        top:20%;
+        right: 0;
         position: absolute;
-        content: "+";
-        font-weight: 900;
-        font-size: 30px;
-        width: 10px;
-        height: 10px;
-        background: #545A2F;
-        color:#545A2F;
+        content: url("../images/icons/plus.png");
+        padding: 5px 5px 0px 5px;
+        border: 1px solid #545A2F;
         border-radius: 50%;
       }
     }
@@ -602,8 +607,9 @@ ul{
     text-align: center;
   }
   img{
-    width: 120%;
+    width: 100%;
     margin: auto;
+    margin-left: 30px;
     margin-top: -30px;
   }
   .form_block{
@@ -623,4 +629,90 @@ ul{
 }
 }
 // FAQ SECTION
+// STILL QUESTIONS SECTION
+.still_questions_section{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  .container{
+    .wrap{
+      margin: auto;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .text_block{
+        width: 50%;
+        h2{
+          font-size: 45px;
+        }
+        p{
+          font-size: 20px;
+          line-height: 47,46px;
+        }
+      }
+      .green_btn{
+        width: 50%;
+        a{
+          position: relative;
+          &::before{
+            position: absolute;
+            content: "";
+            background: url("../images/icons/pointer.png")  no-repeat;
+            width: 236px;
+            height: 45px;
+            left: -250px;
+            bottom: -45px;
+          }
+        }
+      }
+    }
+  }
+}
+// STILL QUESTIONS SECTION
+
+// FOOTER
+footer{
+  height: 225px;
+  background: #545A2F;
+  padding-top: 22px;
+  .container{
+    .wrap{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .contacts_block{
+        width: 15%;
+        a{
+          font-size: 20px;
+          color: #fff;
+          display: block;
+        }
+        .tel{
+          margin-top: 33px;
+          margin-bottom: 22px;
+        }
+        .email{
+          margin-bottom: 48px;
+        }
+        span{
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+      .social_block{
+        text-align: right;
+        img{
+          margin-bottom: 100px;
+        }
+        a{
+          display: block;
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// FOOTER
 //INDEX
