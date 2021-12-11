@@ -81,11 +81,11 @@ h3 span {
   background: #545A2F;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .form_block .sub_input:hover {
   background: #363a1d;
-  cursor: pointer;
 }
 
 .header_section {
@@ -349,7 +349,6 @@ h3 span {
 .what_we_do_section .container .wrap .list_item h4 {
   font-weight: 100;
   font-size: 27px;
-  line-height: 47,46px;
   margin-bottom: 30px;
 }
 
@@ -567,7 +566,7 @@ h3 span {
 .feedback_section .container .slider_feedback .slick-next {
   right: 0;
   background: url("../images/icons/back copy 2.png") no-repeat center;
-  block-size: cover;
+  background-size: cover;
 }
 
 .feedback_section .container .slider_feedback .slick-dots {
@@ -789,7 +788,6 @@ h3 span {
 
 .still_questions_section .container .wrap .text_block p {
   font-size: 20px;
-  line-height: 47,46px;
 }
 
 .still_questions_section .container .wrap .green_btn {

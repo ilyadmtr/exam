@@ -8,7 +8,7 @@
   outline: none;
   border: none;
   font-family: 'Cairo', sans-serif;
-  line-height: 1.5
+  line-height: 1.5;
 }
 @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&display=swap');
@@ -70,9 +70,9 @@ h3{
     color: #fff;
     background:$green_color;
     transition: 0.5s;
+    cursor: pointer;
     &:hover{
       background: #363a1d;
-      cursor: pointer;
     }
   }
 }
@@ -288,8 +288,7 @@ margin-top: 175px;
       }
       h4{
         font-weight: 100;
-        font-size: 27px;
-        line-height: 47,46px;
+        font-size: 27px;;
         margin-bottom: 30px;
       }
       ul{
@@ -467,7 +466,7 @@ ul{
       .slick-next{
         right:0;
         background: url("../images/icons/back\ copy\ 2.png") no-repeat center;
-        block-size: cover;
+        background-size: cover;
       }
       .slick-dots{
         position: absolute;
@@ -568,7 +567,7 @@ ul{
     position: relative;
     span{
       font-weight: 700;
-      cursor:pointer;
+      cursor: pointer;
       &:after{
         top:20%;
         right: 0;
@@ -647,7 +646,6 @@ ul{
         }
         p{
           font-size: 20px;
-          line-height: 47,46px;
         }
       }
       .green_btn{
