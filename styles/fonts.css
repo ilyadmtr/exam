@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/Noahregularitalic.ttf'),
+    url('../fonts/Noahregularitalic.woff'),
+    url("../fonts/Noahregularitalic.woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/Noahregular.ttf'),
+    url('../fonts/Noahregular.woff'),
+    url('../fonts/Noahregular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/Noahbold.ttf'),
+    url('../fonts/Noahbold.woff'),
+    url('../fonts/Noahbold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
