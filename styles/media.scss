@@ -71,7 +71,7 @@
     ul{
       li{
         a{
-          font-size: 16px;
+          font-size: 19px;
         }
       }
     }
@@ -428,28 +428,39 @@ footer{
             display: none;
           }
         }
-      .green_btn{
-        a{
-          &::before{
-            height: 90px;
-            background: url("../images/icons/mob_strelka.png") no-repeat;
-            left: 265px;
-            top: -65px;
+        .green_btn{
+          a{
+            &::before{
+              height: 90px;
+              background: url("../images/icons/mob_strelka.png") no-repeat;
+              left: 265px;
+              top: -65px;
           }
         }
       }
     }
-    }
   }
 }
+}
 @media (max-width:768px){
+  body.lock{
+    overflow: hidden;
+  }
+  .header_section{
+    .container{
   header{
+    .logo_box{
+      width: 40%;
+      z-index: 30;
+    }
     z-index: 50;
     .header__burger{
       display: block;
       position: relative;
       width: 30px;
       height: 20px;
+      z-index: 40;
+
       span{
         position: absolute;
         background: #fff;
@@ -457,7 +468,9 @@ footer{
         width: 100%;
         height: 2px;
         top: 9px;
+        transition: 0.3s;
       }
+
     }
     .header__burger::before,
     .header__burger::after{
@@ -468,19 +481,101 @@ footer{
       height: 2px;
       left:0;
     }
-    .header__burger{
+    .header__burger::before{
       top:0;
+      transition: 0.3s;
     }
     .header__burger::after{
       bottom: 0;
+      transition: 0.3s;
     }
-    // .header__menu{
-    //   position: fixed;
-    //   top: 0;
-    //   left:0;
-    //   width: 100%;
-    //   height: 100vh;
-    //   background: #363a1d;
-    // }
+    .header__burger.active span{
+      transform: scale(0);
+    }
+    .header__burger.active::before{
+      transform: rotate(45deg);
+      top:9px;
+    }
+    .header__burger.active::after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    .header__menu.active{
+      top:0;
+    }
+    .header__menu{
+      top: -100%;
+      padding-top: 45%;
+      position: fixed;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background: #545A2F;
+      left:0;
+      z-index: 20;
+      nav{
+        ul{
+          margin: auto;
+          flex-direction: column;
+          width: 90%;
+          text-align: center;
+          li{
+            a{
+              display: block;
+              font-size: 20px;
+              border-bottom: 1px solid #99A18E;
+              padding-bottom: 15px;
+              margin-bottom: 15px;
+            }
+          }
+          .last_child {
+            border-bottom: 0;
+          }
+        }
+      }
+      .nav_links{
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+}
+  .place_section{
+    .text_block{
+      p{
+        width: 100%;
+      }
+    }
+    .img_block{
+img{
+  width: 100%;
+}
+    }
+  }
+  .proffessional_section{
+    .container{
+      .wrap{
+        .img_content{
+    .first_img{
+      width: 50%;
+    }
+    .second_img{
+      width: 70%;
+      left:0%;
+    }
+  }
+  }
+  }
+  }
+  .still_questions_section{
+    .container .wrap .green_btn{
+      a{
+        &::before{
+          left:0;
+          width: 27px;
+        }
+      }
+    }
   }
 }
