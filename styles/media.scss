@@ -88,7 +88,7 @@
 }
 }
 .left_branch{
-  top: 40%;
+  top: 60%;
 }
 .title_part{
   margin-top: 100px;
@@ -580,16 +580,15 @@ footer{
       }
     }
     .left_branch{
-      width: 35%;
-    top: 35%;
+      display: none;
     }
     .right_branch{
-      width: 35%;
-    top: 35%;
+      display: none;
     }
 
     .img_block{
       width: 100%;
+      margin-top: 70px;
 img{
   width: 100%;
 

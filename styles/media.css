@@ -78,7 +78,7 @@
     font-size: 14px;
   }
   .header_section .left_branch {
-    top: 40%;
+    top: 60%;
   }
   .header_section .title_part {
     margin-top: 100px;
@@ -517,15 +517,14 @@
     display: none;
   }
   .place_section .left_branch {
-    width: 35%;
-    top: 35%;
+    display: none;
   }
   .place_section .right_branch {
-    width: 35%;
-    top: 35%;
+    display: none;
   }
   .place_section .img_block {
     width: 100%;
+    margin-top: 70px;
   }
   .place_section .img_block img {
     width: 100%;
