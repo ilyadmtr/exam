@@ -88,6 +88,11 @@ h3 span {
   background: #363a1d;
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .header_section {
   height: 950px;
   background: url("../images/background/dark_bg_1.png") no-repeat center;

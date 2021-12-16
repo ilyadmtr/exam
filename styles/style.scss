@@ -1,6 +1,5 @@
 @import url("./fonts.css");
 
-
 *{
   margin: 0;
   padding: 0;
@@ -77,6 +76,10 @@ h3{
       background: #363a1d;
     }
   }
+}
+.disabled{
+  pointer-events: none;
+  cursor: default;
 }
 
 
@@ -744,3 +747,4 @@ footer{
 }
 // FOOTER
 //INDEX
+
