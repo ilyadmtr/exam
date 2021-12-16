@@ -604,6 +604,7 @@ img{
       }
       .wrap{
         flex-direction: column-reverse;
+        align-items: center;
         .list_content{
           margin-bottom: 30px;
           ul{
@@ -616,7 +617,8 @@ img{
         }
         }
         .img_content{
-          width: 100%;
+          width: 288px;
+          height: 400px;
           span{
             font-size: 15px;
             transform: rotate(270deg);
@@ -624,13 +626,13 @@ img{
             left: -70px;
           }
     .first_img{
-      width: 100%;
+      width: 288px;
       margin: auto;
     }
     .second_img{
-      width: 90%;
-      top:31%;
-      left:10%;
+      width: 260px;
+      top: 205px;
+    left: 29px;
     }
   }
   }
@@ -642,6 +644,209 @@ img{
         &::before{
           left:0;
           width: 27px;
+        }
+      }
+    }
+  }
+  .how_order_section{
+    margin-top: 70px;
+    .background_block{
+      .form_block{
+        width: 90%;
+        span{
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        .your_email{
+          font-size: 18px;
+          color: #63533E;
+          padding: 21px;
+        }
+        label{
+          font-size: 14px;
+        }
+        .sub_input{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .our_projects_section{
+    margin-top: 50px;
+    .container{
+      .img_block{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .four_steps_section{
+    margin-top: 96px;
+    .container{
+      .text_block{
+        width: 100%;
+        margin-bottom: 22px;
+        h3{
+          br{
+            display: none;
+          }
+        }
+      }
+      ul{
+        li{
+          width: 100%;
+          flex-direction: column;
+          margin-bottom: 30px;
+          align-items: center;
+          text-align: left;
+          p{
+            margin: 22px 0;
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .why_we_section{
+    .container{
+    .text_block{
+      h3{
+        font-weight: 900;
+      }
+    }
+    ul{
+      width: 100%;
+      li{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+        img{
+          width: 15%;
+          margin: 0;
+        }
+        p{
+          font-size: 16px;
+          width: 60%;
+          margin: 0;
+        }
+      }
+    }
+  }
+  }
+  .feedback_section{
+    padding: 50px 0;
+    .container{
+    .text_block{
+      margin-bottom: 25px;
+    }
+    .slider_feedback{
+      width: 100%;
+      .slider_item{
+        .text_content{
+          h4{
+            font-size: 20px;
+          }
+          span{
+            font-size: 18px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  }
+  .faq_section{
+    margin-top: 60px;
+    .container{
+      .wrap{
+    .accordion{
+      .accordion_item{
+        .accordion-item_trigger{
+          font-size: 18px;
+          span{
+            display: block;
+            width: 90%;
+          }
+        }
+      }
+    }
+      }
+    }
+  }
+  .still_questions_section{
+    margin: 60px 0;
+    .container{
+    .wrap{
+      width: 100%;
+      .text_block{
+        width: 288px;
+        h2{
+          font-size: 28px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+      .green_btn{
+        width: 100%;
+        a{
+          font-size: 24px;
+          &::before{
+            top: -93px;
+            left: 212px;
+          }
+        }
+      }
+    }
+  }
+  }
+  footer{
+    height: auto;
+    .container{
+      .wrap{
+        flex-direction: column;
+        .contacts_block{
+          margin-bottom: 31px;
+          width: 100%;
+          text-align: center;
+          order:0;
+          .tel{
+            font-size: 20px;
+            margin-bottom: 11px;
+          }
+          .email{
+            font-size: 20px;
+            margin-bottom: 11px;
+          }
+
+        }
+        .logo_block{
+          width: 100%;
+          order:-1;
+          margin-bottom: 40px;
+          img{
+            margin: auto;
+            width: 50%;
+            display: block;
+          }
+        }
+        .social_block{
+          width: 100%;
+          text-align: center;
+          img{
+            margin-bottom: 55px;
+          }
+          a{
+            font-size: 16px;
+            margin-bottom: 40px;
+          }
         }
       }
     }
