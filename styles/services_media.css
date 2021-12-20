@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 *, body, html {
   margin: 0;
   padding: 0;
@@ -19,12 +20,9 @@
   .container {
     width: 90%;
   }
-  .how_order_section .background_block img {
-    width: 50%;
-  }
 }
 
-@media (max-width: 1200px) and (max-width: 1125px) {
+@media (max-width: 1125px) {
   h3 {
     font-size: 30px;
   }
@@ -57,6 +55,27 @@
   .header_section .title_part h2 {
     font-size: 30px;
   }
+  .service_examples .container .wrapper .example_item {
+    height: auto;
+  }
+  .service_examples .container .wrapper .example_item .text_part {
+    padding: 0;
+  }
+  .service_examples .container .wrapper .example_item .text_part h2 {
+    font-size: 45px;
+  }
+  .service_examples .container .wrapper .example_item .text_part p {
+    font-size: 16px;
+  }
+  .service_examples .container .wrapper .example_item .text_part .more_details_link {
+    margin-top: 30px;
+  }
+  .service_examples .container .wrapper .example_item .img_part {
+    padding: 1;
+  }
+  .contact_us_section .container .text_content h3 {
+    font-size: 32px;
+  }
   footer .container {
     height: auto;
   }
@@ -75,48 +94,7 @@
   }
 }
 
-@media (max-width: 1200px) and (max-width: 1024px) {
-  .example_work_section .container {
-    width: 90%;
-  }
-  .example_work_section .container .slider_gallery {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-  }
-  .example_work_section .container .slider_gallery .long_item {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 3;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .how_order_section .text_block h3 {
-    font-size: 25px;
-  }
-  .how_order_section .background_block {
-    height: 200px;
-  }
-  .how_order_section .background_block .form_block span {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  .how_order_section .background_block .form_block form .your_email {
-    font-size: 18px;
-    width: 60%;
-    margin-bottom: 10px;
-  }
-  .how_order_section .background_block .form_block form label {
-    font-size: 16px;
-  }
-  .how_order_section .background_block .form_block form .sub_input {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 768px) {
+@media (max-width: 768px) {
   h3 {
     font-size: 24px;
   }
@@ -126,8 +104,8 @@
   .header_section .container .title_part h1 {
     font-size: 40px;
   }
-  .header_section .container .title_part h2 {
-    font-size: 25px;
+  .header_section .container .title_part .order_link a {
+    font-size: 18px;
   }
   .header_section .container header {
     z-index: 50;
@@ -226,40 +204,76 @@
     width: 80%;
     margin-bottom: 20px;
   }
-  .example_work_section {
-    margin-top: 90px;
-    margin-bottom: 90px;
+  .service_examples .container .wrapper .example_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
   }
-  .example_work_section .container .text_content {
+  .service_examples .container .wrapper .example_item .text_part {
+    width: 100%;
+    padding: 0;
+  }
+  .service_examples .container .wrapper .example_item .text_part h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .service_examples .container .wrapper .example_item .text_part .more_details_link {
+    margin-top: 30px;
+  }
+  .service_examples .container .wrapper .example_item .img_part {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .service_examples .container .wrapper .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact_us_section {
+    margin-top: 100px;
+  }
+  .contact_us_section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+  .contact_us_section .container .text_content {
     width: 100%;
   }
-  .example_work_section .container .text_content h3 {
-    font-size: 40px;
+  .contact_us_section .container .text_content h3 {
+    text-align: center;
+    font-size: 24px;
   }
-  .example_work_section .container .text_content ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .contact_us_section .container .text_content .mobile_none {
+    display: none;
+  }
+  .contact_us_section .container .form_content {
     width: 100%;
   }
-  .example_work_section .container .slider_gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 10px;
+  .contact_us_section .container .form_content form input {
+    font-size: 18px;
+    padding: 10px 0 10px 10px;
   }
-  .example_work_section .container .slider_gallery .slider_item img {
-    width: 95%;
-    margin: auto;
+  .contact_us_section .container .form_content form textarea {
+    font-size: 18px;
+    padding-top: 18px;
+    padding-left: 10px;
   }
-  .example_work_section .container .slider_gallery .slider_item:hover {
-    -webkit-transform: none;
-            transform: none;
+  .contact_us_section .container .form_content form .submit_input_block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .example_work_section .container .green_btn a {
-    font-size: 20px;
+  .contact_us_section .container .form_content form .submit_input_block .sub_input {
+    width: 100%;
   }
   footer {
     height: auto;
@@ -309,34 +323,5 @@
     font-size: 16px;
     margin-bottom: 40px;
   }
-  .how_order_section .text_block {
-    text-align: center;
-    margin-right: 0;
-  }
-  .how_order_section .text_block h3 {
-    margin: auto;
-  }
-  .how_order_section .background_block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-  }
-  .how_order_section .background_block img {
-    display: block;
-    width: 90%;
-    margin-left: 10%;
-  }
-  .how_order_section .background_block .form_block {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-  }
-  .how_order_section .background_block form {
-    width: 100%;
-    text-align: center;
-  }
 }
-/*# sourceMappingURL=portfolio_media.css.map */
+/*# sourceMappingURL=services_media.css.map */

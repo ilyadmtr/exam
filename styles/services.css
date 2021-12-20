@@ -95,7 +95,7 @@ h3 span {
 
 .header_section {
   height: 500px;
-  background: url("../images/background/portfolio_header.png") no-repeat center;
+  background: url("../images/background/services_back.png") no-repeat center;
   position: relative;
   background-size: cover;
   padding-top: 30px;
@@ -200,154 +200,208 @@ h3 span {
   font-size: 70px;
   color: white;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
-.header_section .title_part h2 {
-  font-size: 38px;
-  font-weight: lighter;
-  color: white;
+.header_section .title_part .order_link a {
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 76px;
+  border: 1px solid #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.example_work_section {
-  margin-top: 130px;
-  margin-bottom: 130px;
+.header_section .title_part .order_link a:hover {
+  background: #fff;
+  color: #000;
 }
 
-.example_work_section .container {
-  width: 1000px;
+.service_examples {
+  margin-top: 100px;
 }
 
-.example_work_section .container .text_content h3 {
-  font-size: 58px;
-  text-align: left;
-  margin-bottom: 20px;
+.service_examples .container .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
-.example_work_section .container .text_content ul {
+.service_examples .container .wrapper .example_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.example_work_section .container .text_content ul li {
-  margin-bottom: 24px;
-  margin-right: 90px;
-}
-
-.example_work_section .container .text_content ul li span {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.example_work_section .container .text_content ul li p {
-  font-size: 24px;
-}
-
-.example_work_section .container .slider_gallery {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px;
-  margin-bottom: 42px;
+  height: 562px;
+  margin-bottom: 50px;
 }
 
-.example_work_section .container .slider_gallery .slider_item {
-  width: 100%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.service_examples .container .wrapper .example_item .text_part {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 5%;
 }
 
-.example_work_section .container .slider_gallery .slider_item img {
+.service_examples .container .wrapper .example_item .text_part h2 {
+  font-size: 50px;
+}
+
+.service_examples .container .wrapper .example_item .text_part p {
+  font-size: 20px;
+}
+
+.service_examples .container .wrapper .example_item .text_part .more_details_link a {
+  color: black;
+  font-size: 20px;
+  padding: 15px 95px;
+  border: 1px solid #545A2F;
+}
+
+.service_examples .container .wrapper .example_item .text_part .more_details_link a:hover {
+  background: #545A2F;
+  color: white;
+}
+
+.service_examples .container .wrapper .example_item .img_part {
+  width: 50%;
+  height: 100%;
+  padding: 4%;
+}
+
+.service_examples .container .wrapper .example_item .img_part img {
   width: 100%;
   height: 100%;
 }
 
-.example_work_section .container .slider_gallery .slider_item:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+.contact_us_section {
+  width: 100%;
 }
 
-.example_work_section .container .slider_gallery .long_item {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 4;
-}
-
-.example_work_section .container .slider_gallery .text_item {
-  background: #E9ECE0;
-  text-align: center;
+.contact_us_section .container {
+  padding: 100px 100px 50px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.example_work_section .container .slider_gallery .text_item p {
-  width: 250px;
+.contact_us_section .container .text_content {
+  width: 38%;
+}
+
+.contact_us_section .container .text_content h3 {
+  text-align: left;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.contact_us_section .container .text_content span {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact_us_section .container .text_content a {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact_us_section .container .text_content img {
+  margin-top: 40px;
+}
+
+.contact_us_section .container .form_content {
+  width: 58%;
+  margin-bottom: 150px;
+}
+
+.contact_us_section .container .form_content form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact_us_section .container .form_content form input {
+  border: 1px solid #99A18E;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+  color: #63533E;
+  height: 50px;
+  padding-left: 22px;
+}
+
+.contact_us_section .container .form_content form textarea {
+  border: 1px solid #99A18E;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+  color: #63533E;
+  padding-left: 22px;
+  padding-top: 10px;
+  height: 125px;
+}
+
+.contact_us_section .container .form_content form .input_block {
+  margin-bottom: 40px;
+}
+
+.contact_us_section .container .form_content form .input_block #access {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.contact_us_section .container .form_content form .input_block label {
   font-size: 18px;
-  font-weight: 400;
-  font-style: italic;
 }
 
-.how_order_section {
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-
-.how_order_section .text_block {
+.contact_us_section .container .form_content form .submit_input_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 10%;
-  margin-bottom: 25px;
-}
-
-.how_order_section .text_block h3 {
-  text-align: left;
-}
-
-.how_order_section .background_block {
   width: 100%;
-  height: 250px;
-  background: #99A18E4D;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.how_order_section .background_block span {
-  font-size: 18px;
+.contact_us_section .container .form_content form .submit_input_block .sub_input {
+  width: 40%;
+  background: #545A2F;
+  color: white;
+  padding: 0;
 }
 
-.how_order_section .background_block img {
-  width: 800px;
-}
-
-.how_order_section .background_block .your_email {
-  font-size: 20px;
-}
-
-.how_order_section .background_block label {
-  font-size: 20px;
-}
-
-.how_order_section .background_block .sub_input {
-  margin-top: 15px;
+.contact_us_section .container .form_content form .submit_input_block .sub_input:hover {
+  background: #363a1d;
+  cursor: pointer;
 }
 
 footer {
@@ -406,4 +460,4 @@ footer .container .wrap .social_block a {
   font-size: 16px;
   color: #fff;
 }
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=services.css.map */
