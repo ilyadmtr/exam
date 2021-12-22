@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/media.css" />
     <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./styles/magnific-popup.css">
   </head>
   <body>
     <!-- HEADER SECTION  -->
@@ -29,7 +30,7 @@
           </nav>
           <div class="nav_links">
             <a class="number_link" href="tel:+7(921)8888888">+7 (921) 888 88 88</a>
-            <a class="text_link" href="#">Бесплатная консультация</a>
+            <a class="text_link" href="#consultation_form">Бесплатная консультация</a>
           </div>
         </div>
         </header>
@@ -40,6 +41,29 @@
         </div>
       </div>
       <img class="left_branch" src="./images/background/Layer1002.png" alt="left branch" />
+
+      <div class="wrap_order">
+
+      <div class="order_consultation" >
+        <form id = "consultation_form" class = "test">
+            <div class="wrapper" >
+              <h2>Закажите консультацию</h2>
+              <p>Менеджер перезвонит Вам в ближайшее время</p>
+            <input type="text" class = "name" placeholder="Ваше имя">
+            <input class = "num_input" type="text" placeholder="+7(___) ___ __ __">
+            <div class="input_block">
+              <input type="checkbox" id="access" name="access" />
+              <label for="access">Я даю согласие на обработку своих персональных данных</label> 
+            </div>
+            <div class="submit_input_block">
+              <input class = "sub_input" type="submit" value="Перезвоните мне">
+            </div>
+          </div>
+          <img class = "top_branch"src="./images/background/top_branch.png" alt="branch">
+          <img class = "bottom_branch"src="./images/background/bottom_branch.png" alt="branch">
+          </form>
+        </div>
+      </div>
     </section>
     <!-- HEADER SECTION  -->
 
@@ -444,8 +468,10 @@
       </div>
     </footer>
     <!-- FOOTER -->
+    <a href="#" class = "back-to-top"></a>
     <script src="./script/jquery-1.11.0.min.js"></script>
     <script src="./script/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./script/jquery.magnific-popup.min.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script src="./script/main.js"></script>
   </body>
