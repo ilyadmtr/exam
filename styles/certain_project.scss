@@ -191,6 +191,7 @@ right:0;
 }
 }
 
+
 //HEADER
 .header_section{
   height: 500px;
@@ -285,6 +286,7 @@ font-size: 22px;
     }
   }
 }
+
 }
 //HEADER
 
@@ -310,58 +312,72 @@ font-size: 22px;
   }
 }
 //LINK BACK
-//SERVICES EXAMPLES
-.service_examples{
-  margin-top: 100px;
+
+//INFORMATION SECTION
+.information_section{
   .container{
     .wrapper{
-      .example_item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      width: 100%;
+      .block{
         width: 100%;
-        height:562px;
-        margin-bottom: 50px;
-        .text_part{
-          text-align: left;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          width: 50%;
-          height: 100%;
-          padding: 5%;
-          h2{
-            font-size: 50px;
-          }
-          p{
-            font-size: 20px;
-          }
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
         .img_part{
-          width: 50%;
-          padding: 4%;
+          width: 45%;
           img{
             width: 100%;
           }
         }
+        .text_part{
+          width:45%;
+          h2{
+            font-size: 48px;
+          }
+          h3{
+  text-align: left;
+font-size: 24px;
+margin-bottom: 30px;
+}
+        }
+        .wrap_small_text{
+          display: flex;
+        }
+        .small_text_part{
+          margin-right: 30px;
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 18px;
+        }
+        .second_p{
+          font-size: 38px;
+          color:#5B6460;
+          display: block;
+          margin: auto;
+        }
+      }
+      .space_around{
+        justify-content: space-around;
       }
     }
   }
 }
-//SERVICES EXAMPLES
-// EXAMPLE WORK SECTION
+//INFORMATION SECTION
 .example_work_section{
   margin-top: 130px;
   margin-bottom: 130px;
   .container{
-    width: 1000px;
+    width: 1200px;
     .text_content{
-      width: 469px;
+      width: 40%;
       margin: auto;
       h3{
         font-size: 38px;
-        margin-bottom: 85px;
         text-align: left;
+        margin-bottom: 66px;
+        color:#5B6460;
       }
     }
     .slider_gallery{
@@ -399,113 +415,76 @@ font-size: 22px;
           font-style: italic;
         }
       }
-    }
-  }
-}
-// EXAMPLE WORK SECTION
-
-// TEXT SECTION
-.text_section{
-  margin-top: 125px;
-  .container{
-    .wrapper{
-      width: 60%;
+      .form_item{
+        grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #545A2F;
+    padding: 150px 20px;
+    h2{
+      font-size: 50px;
+      color: white;
       text-align: center;
+      margin-bottom: 30px;
+    }
+    p{
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      width: 90%;
       margin: auto;
-      h2{
-        font-size: 58px;
-        margin-bottom: 47px;
-      }
-      p{
-        font-size: 18px;
-      }
+      margin-bottom: 30px;
     }
-  }
-}
-// TEXT SECTION
-.contact_us_section{
-  margin-top: 150px;
-  width: 100%;
-  .container{
-    padding: 100px 100px 50px 100px;
-    display: flex;
-    justify-content: space-between;
-    .text_content{
-      width: 38%;
-      h3{
-        text-align: left;
-        font-size: 38px;
-        margin-bottom: 40px;
-      }
-      span{
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      a{
-        color: black;
-        font-size: 24px;
-        margin-bottom: 15px;
-      }
-      img{
-        margin-top: 40px;
-      }
+    .want_form{
+    input{
+      border: 1px solid #99A18E;
+      font-size: 24px;
+      width: 100%;
+      margin-bottom: 24px;
+      color: #63533E;
+      height: 50px;
+      padding-left: 22px;
     }
-    .form_content{
-      width: 58%;
-      margin-bottom: 150px;
-      form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-      input{
-        border: 1px solid #99A18E;
-        font-size: 24px;
-        width: 100%;
-        margin-bottom: 24px;
-        color: #63533E;
-        height: 50px;
-        padding-left: 22px;
-      }
-      textarea{
-        border: 1px solid #99A18E;
-        font-size: 24px;
-        width: 100%;
-        margin-bottom: 24px;
-        color: #63533E;
-        padding-left: 22px;
-        padding-top: 10px;
-        height: 125px;
-      }
-      .input_block{
-        margin-bottom: 40px;
-      #access{
-        width: 18px;
-        height: 18px;
-        margin: 0;
-        margin-right: 5px;
-      }
-      label{
-        font-size: 18px;
-      }
+    .input_block{
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+    .access{
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      margin-right: 10px;
+    }
+    label{
+      font-size: 16px;
+      color: white;
+    }
     }
     .submit_input_block{
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0;
     .sub_input{
-      width: 40%;
-      background: #545A2F;
-      color: white;
-      padding: 0;
-      &:hover{
-        background: #363a1d;
-        cursor: pointer;
+    background: #545A2F;
+    color: white;
+    width: 311px;
+    height: 60px;
+    font-size: 24px;
+    padding: 0;
+    border:1px solid  white;
+    &:hover{
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+    }
+    }
       }
     }
   }
-    }
-    }
-  }
+}
 }
 footer{
   height: 225px;
@@ -548,29 +527,5 @@ footer{
         }
       }
     }
-  }
-}
-.back-to-top{
-  z-index: 70;
-  display: none;
-  position: fixed;
-  right:30px;
-  bottom: 50px;
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-  background: #99A18E;
-  &:hover, &:focus{
-    filter:brightness(1.5);
-    outline: none;
-  }
-  &::before{
-    position: absolute;
-    content: "";
-    background-size: cover;
-    width: 95px;
-    height: 95px;
-    background: url("../images/icons/back_arrow.png") center no-repeat;
-    background-position: 50% 50%;
   }
 }
