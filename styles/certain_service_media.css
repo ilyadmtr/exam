@@ -58,6 +58,18 @@
   .header_section .title_part h2 {
     font-size: 30px;
   }
+  .service_examples {
+    margin-top: 100px;
+  }
+  .service_examples .container .wrapper .example_item {
+    height: auto;
+  }
+  .service_examples .container .wrapper .example_item .text_part h2 {
+    font-size: 35px;
+  }
+  .service_examples .container .wrapper .example_item .text_part p {
+    font-size: 16px;
+  }
   .contact_us_section .container .form_content h3 {
     font-size: 32px;
   }
@@ -76,6 +88,23 @@
   }
   footer .container .wrap .social_block a {
     font-size: 8px;
+  }
+  .example_work_section .container {
+    width: 90%;
+  }
+  .example_work_section .container .slider_gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .example_work_section .container .slider_gallery .long_item {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
 
@@ -224,20 +253,21 @@
   }
   .contact_us_section .container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
     width: 90%;
   }
   .contact_us_section .container .text_content {
-    margin-top: 0;
-    margin-bottom: 110px;
     width: 100%;
   }
   .contact_us_section .container .text_content h3 {
     text-align: center;
     font-size: 24px;
+  }
+  .contact_us_section .container .text_content .mobile_none {
+    display: none;
   }
   .contact_us_section .container .form_content {
     width: 100%;
@@ -258,6 +288,85 @@
   }
   .contact_us_section .container .form_content form .submit_input_block .sub_input {
     width: 100%;
+  }
+  .service_examples .container .wrapper .example_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .service_examples .container .wrapper .example_item .text_part {
+    width: 100%;
+    padding: 0;
+  }
+  .service_examples .container .wrapper .example_item .text_part h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .service_examples .container .wrapper .example_item .img_part {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .service_examples .container .wrapper .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .back-to-last-page a {
+    font-size: 18px;
+  }
+  .back-to-last-page a::before {
+    top: 0px;
+  }
+  .text_section .container .wrapper {
+    width: 100%;
+  }
+  .text_section .container .wrapper h2 {
+    font-size: 24px;
+  }
+  .text_section .container .wrapper p {
+    font-size: 16px;
+  }
+  .example_work_section {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .example_work_section .container .text_content {
+    width: 100%;
+    margin: auto;
+  }
+  .example_work_section .container .text_content h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .example_work_section .container .text_content ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .example_work_section .container .slider_gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  .example_work_section .container .slider_gallery .slider_item img {
+    width: 95%;
+    margin: auto;
+  }
+  .example_work_section .container .slider_gallery .slider_item:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .example_work_section .container .green_btn a {
+    font-size: 20px;
   }
   footer {
     height: auto;
@@ -308,4 +417,4 @@
     margin-bottom: 40px;
   }
 }
-/*# sourceMappingURL=contacts_media.css.map */
+/*# sourceMappingURL=certain_service_media.css.map */

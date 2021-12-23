@@ -82,6 +82,7 @@ h3{
   cursor: default;
 }
 .back-to-top{
+  z-index: 70;
   display: none;
   position: fixed;
   right:30px;
@@ -103,6 +104,91 @@ h3{
     background: url("../images/icons/back_arrow.png") center no-repeat;
     background-position: 50% 50%;
   }
+}
+.disabled{
+  pointer-events: none;
+  cursor: default;
+}
+.order_consultation{
+  display: none;
+}
+.test{
+  position: relative;
+  margin: auto;
+padding: 60px;
+background:white;
+width: 616px;
+height: 571px;
+display: flex;
+flex-direction: column;
+.wrapper{
+  text-align: center;
+  z-index: 10;
+  h2{
+    font-size: 58px;
+    color:$green_color ;
+    line-height: 60px;
+    margin-bottom: 19px;
+  }
+  p{
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+input{
+  border: 1px solid #99A18E;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+  color: #63533E;
+  height: 50px;
+  padding-left: 22px;
+}
+.input_block{
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+#access{
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+}
+label{
+  font-size: 16px;
+}
+}
+.submit_input_block{
+display: flex;
+justify-content: center;
+width: 100%;
+margin-bottom: 0;
+.sub_input{
+background: #545A2F;
+color: white;
+width: 311px;
+height: 60px;
+font-size: 24px;
+padding: 0;
+&:hover{
+  background: #363a1d;
+  cursor: pointer;
+}
+}
+}
+}
+.mfp-close-btn-in .mfp-close {
+  color: $green_color;
+}
+.top_branch{
+position: absolute;
+top: 0;
+left:0;
+}
+.bottom_branch{
+position: absolute;
+bottom: 0;
+right:0;
+}
 }
 
 //PORTFOLIO

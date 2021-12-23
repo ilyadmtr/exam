@@ -82,6 +82,7 @@ h3{
   cursor: default;
 }
 .back-to-top{
+  z-index: 70;
   display: none;
   position: fixed;
   right:30px;

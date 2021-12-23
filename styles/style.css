@@ -94,6 +94,7 @@ h3 span {
 }
 
 .back-to-top {
+  z-index: 70;
   display: none;
   position: fixed;
   right: 30px;

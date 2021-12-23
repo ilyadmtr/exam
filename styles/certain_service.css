@@ -93,6 +93,39 @@ h3 span {
   cursor: default;
 }
 
+.back-to-top {
+  z-index: 70;
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: #99A18E;
+}
+
+.back-to-top:hover, .back-to-top:focus {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+  outline: none;
+}
+
+.back-to-top::before {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  width: 95px;
+  height: 95px;
+  background: url("../images/icons/back_arrow.png") center no-repeat;
+  background-position: 50% 50%;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .order_consultation {
   display: none;
 }
@@ -326,15 +359,31 @@ h3 span {
   color: #000;
 }
 
-.service_examples {
-  margin-top: 100px;
+.back-to-last-page {
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
-.service_examples .container .wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.back-to-last-page a {
+  margin-left: 60px;
+  font-size: 24px;
+  color: black;
+  position: relative;
+}
+
+.back-to-last-page a::before {
+  position: absolute;
+  width: 45px;
+  height: 20px;
+  content: "";
+  background: url("../images/icons/back-to-last-page.png") no-repeat;
+  background-size: cover;
+  top: 5px;
+  left: -60px;
+}
+
+.service_examples {
+  margin-top: 100px;
 }
 
 .service_examples .container .wrapper .example_item {
@@ -377,30 +426,111 @@ h3 span {
   font-size: 20px;
 }
 
-.service_examples .container .wrapper .example_item .text_part .more_details_link a {
-  color: black;
-  font-size: 20px;
-  padding: 15px 95px;
-  border: 1px solid #545A2F;
-}
-
-.service_examples .container .wrapper .example_item .text_part .more_details_link a:hover {
-  background: #545A2F;
-  color: white;
-}
-
 .service_examples .container .wrapper .example_item .img_part {
   width: 50%;
-  height: 100%;
   padding: 4%;
 }
 
 .service_examples .container .wrapper .example_item .img_part img {
   width: 100%;
+}
+
+.example_work_section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.example_work_section .container {
+  width: 1000px;
+}
+
+.example_work_section .container .text_content {
+  width: 469px;
+  margin: auto;
+}
+
+.example_work_section .container .text_content h3 {
+  font-size: 38px;
+  margin-bottom: 85px;
+  text-align: left;
+}
+
+.example_work_section .container .slider_gallery {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 42px;
+}
+
+.example_work_section .container .slider_gallery .slider_item {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.example_work_section .container .slider_gallery .slider_item img {
+  width: 100%;
   height: 100%;
 }
 
+.example_work_section .container .slider_gallery .slider_item:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.example_work_section .container .slider_gallery .long_item {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.example_work_section .container .slider_gallery .text_item {
+  background: #E9ECE0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.example_work_section .container .slider_gallery .text_item p {
+  width: 250px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text_section {
+  margin-top: 125px;
+}
+
+.text_section .container .wrapper {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.text_section .container .wrapper h2 {
+  font-size: 58px;
+  margin-bottom: 47px;
+}
+
+.text_section .container .wrapper p {
+  font-size: 18px;
+}
+
 .contact_us_section {
+  margin-top: 150px;
   width: 100%;
 }
 
@@ -597,4 +727,4 @@ footer .container .wrap .social_block a {
   background: url("../images/icons/back_arrow.png") center no-repeat;
   background-position: 50% 50%;
 }
-/*# sourceMappingURL=services.css.map */
+/*# sourceMappingURL=certain_service.css.map */

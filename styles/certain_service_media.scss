@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 *, body, html{
   margin: 0;
   padding: 0;
@@ -19,11 +20,10 @@
   .container{
     width: 90%;
   }
-  .how_order_section{
-    .background_block{
-      img{
-        width: 50%;
-    }
+  .contact_us_section{
+    .container{
+    padding: 0;
+  }
   }
 }
 @media (max-width:1125px)  {
@@ -71,6 +71,34 @@
   }
 }
 }
+.service_examples{
+  margin-top: 100px;
+  .container{
+    .wrapper{
+      .example_item{
+        height: auto;
+        .text_part{
+          h2{
+            font-size: 35px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact_us_section{
+  .container{
+    .form_content{
+      h3{
+        font-size: 32px;
+      }
+    }
+  }
+}
 footer{
   .container{
   height: auto;
@@ -95,53 +123,23 @@ footer{
 }
 }
 }
-}
-@media (max-width: 1024px){
-  .example_work_section{
-    .container{
-      width: 90%;
-      .slider_gallery{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        .long_item{
-          grid-column-start: 1;
-          grid-column-end: 3;
-          grid-row-start: 1;
-          grid-row-end: 2;
-        }
-      }
-    }
-  }
-  .how_order_section{
-    .text_block{
-      h3{
-        font-size: 25px;
-      }
-    }
-    .background_block{
-      height: 200px;
-      .form_block{
-        span{
-          font-size: 16px;
-          margin-bottom: 10px;
-        }
-        form{
-          .your_email{
-            font-size: 18px;
-            width: 60%;
-            margin-bottom: 10px;
-          }
-          label{
-            font-size: 16px;
-          }
-          .sub_input{
-            font-size: 18px;
-          }
-        }
+.example_work_section{
+  .container{
+    width: 90%;
+    .slider_gallery{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      .long_item{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
       }
     }
   }
 }
+}
+
 @media (max-width:768px){
   .test{
     padding: 60px 20px;
@@ -187,8 +185,10 @@ footer{
         h1{
           font-size: 40px;
         }
-        h2{
-          font-size: 25px;
+        .order_link{
+          a{
+          font-size: 18px;
+        }
         }
       }
   header{
@@ -284,14 +284,102 @@ footer{
   }
 }
 }
+.contact_us_section{
+  margin-top: 100px;
+  .container{
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+    .text_content{
+      width: 100%;
+      h3{
+        text-align: center;
+        font-size: 24px;
+      }
+      .mobile_none{
+        display: none;
+      }
+    }
+    .form_content{
+      width: 100%;
+      form{
+        input{
+        font-size: 18px;
+        padding: 10px 0 10px 10px;
+      }
+      textarea{
+        font-size: 18px;
+        padding-top: 18px;
+        padding-left: 10px;
+      }
+      .submit_input_block{
+        justify-content: center;
+        .sub_input{
+          width: 100%;
+        }
+      }
+      }
+    }
+  }
+}
+.service_examples{
+  .container{
+    .wrapper{
+      .example_item{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+        .text_part{
+          width: 100%;
+          padding: 0;
+          h2{
+            font-size: 24px;
+            margin-bottom: 30px;
+          }
+        }
+        .img_part{
+          padding: 0;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+      .reverse{
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+.back-to-last-page{
+  a{
+    font-size: 18px;
+    &::before{
+      top:0px;
+    }
+  }
+}
+.text_section{
+  .container{
+    .wrapper{
+      width: 100%;
+      h2{
+        font-size: 24px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+}
 .example_work_section{
   margin-top: 90px;
   margin-bottom: 90px;
   .container{
     .text_content{
       width: 100%;
+      margin: auto;
       h3{
-        font-size: 40px;
+        font-size: 24px;
+        text-align: center;
       }
       ul{
         flex-wrap: wrap;
@@ -363,33 +451,4 @@ footer{
       }
     }
   }
-  .how_order_section{
-    .text_block{
-      text-align: center;
-      margin-right: 0;
-      h3{
-        margin: auto;
-      }
-    }
-    .background_block{
-      flex-direction: column;
-      height: auto;
-      padding: 20px 0;
-      img{
-        display: block;
-        width: 90%;
-        margin-left: 10%;
-      }
-      .form_block{
-        width: 90%;
-        margin: auto;
-        text-align: center;
-      }
-      form{
-        width: 100%;
-        text-align: center;
-      }
-    }
-  }
-}
 }
